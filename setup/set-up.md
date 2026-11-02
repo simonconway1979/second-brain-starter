@@ -75,7 +75,7 @@ Then say: "We'll ingest these files one at a time, so you can see what happens. 
 
 ## Stage 4: the first file
 
-Ingest the shortest file. Say which one it is. List the pages you wrote, each with its full path.
+Ingest the shortest file. Show its full path as a link under **Raw file**, then list the pages you wrote under **Wiki pages**, each as a full path link, so they can open the raw file and compare.
 
 Then say: "Open one of these pages. Does it say what you'd expect, and do its links go back to your raw file? If not, tell me and I'll fix it. Ready for the second file?"
 
@@ -85,7 +85,7 @@ Then say: "Open one of these pages. Does it say what you'd expect, and do its li
 
 ## Stage 5: the second file
 
-Ingest it. List the pages you created and, separately, the existing pages you changed and why.
+Ingest it. Show its full path as a link under **Raw file**. Under **Wiki pages**, list the pages you created and, separately, the existing pages you changed and why, each as a full path link.
 
 Then say: "This is the wiki starting to build up: the new file changed pages that were already there. Ready for the rest?" If no existing page changed, say that instead of the first sentence.
 
