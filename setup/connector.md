@@ -4,7 +4,7 @@ Walk them through this one stage at a time. Keep every message short, in plain w
 
 First read `setup/connector-rules.md`, and follow those rules exactly.
 
-**If they named a source that already has a state file in `raw/.state/`,** read its recipe in `connectors/`, run it using the saved settings, print the one line, and finish.
+**If they named a source that already has a state file in `raw/.state/`,** read its recipe in `connectors/`, run it using the saved settings and print the one line. If there's anything new, follow `setup/capture.md` to add it to the wiki. Then finish.
 
 **If they named a source that has a recipe but no state file,** go to stage 2. If its tools still aren't connected, say what's missing and stop.
 
@@ -47,9 +47,11 @@ Then say: "Let's test it. A second run should write nothing new."
 
 Run it again and print the one line. Check the three tests in the rules, and say which passed.
 
+If they passed, follow `setup/capture.md` to add the new files to the wiki. If they didn't, fix the problem first: don't add files that failed.
+
 ## Stage 5: what's next
 
-Say: "That's your capture layer. To run it again, type /connector [source]. To schedule it, ask me to run that every morning. Then /capture adds what's new to your wiki."
+Say: "That's your capture layer. To run it again, type /connector [source]. It brings in anything new and adds it to your wiki. To schedule it, ask me to run that every morning."
 
 End your message with exactly this:
 
