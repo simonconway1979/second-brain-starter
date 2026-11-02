@@ -1,6 +1,6 @@
 # Build your first agent
 
-An agent is an instructions file plus a trigger. Walk them through this in short, plain messages. Where a stage says **Stop**, end your message and wait.
+An agent is an instructions file plus a trigger. Walk them through this in short, plain messages. Where a stage says **Stop**, end your message with the question and wait. Don't add a recap, a status note or a next-step box.
 
 ## Stage 1: pick the job
 

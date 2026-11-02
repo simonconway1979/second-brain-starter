@@ -1,6 +1,6 @@
 # Connect a source
 
-Walk them through this one stage at a time. Keep every message short, in plain words. Where a stage says **Stop**, end your message and wait.
+Walk them through this one stage at a time. Keep every message short, in plain words. Where a stage says **Stop**, end your message with the question and wait. Don't add a recap, a status note or a next-step box.
 
 First read `setup/connector-rules.md`, and follow those rules exactly.
 

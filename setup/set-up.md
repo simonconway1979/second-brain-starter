@@ -5,7 +5,7 @@ https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
 
 Read it first. If you can't open it, say so in one line and carry on. The stages below are enough.
 
-Work through one stage at a time. Where a stage says **Stop**, end your message and wait for their reply. Keep every message short, in plain words. If `wiki/` already exists, ask before changing anything.
+Work through one stage at a time. Where a stage says **Stop**, end your message with the question and wait for their reply. Keep every message short, in plain words. Don't add a recap, a status note or a next-step box: this guide is the only next step. If `wiki/` already exists, ask before changing anything.
 
 ## Stage 1: the purpose
 
