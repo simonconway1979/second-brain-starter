@@ -1,0 +1,8 @@
+# Your own brain stays on your computer
+raw/*
+!raw/.gitkeep
+wiki/
+CLAUDE.md
+AGENTS.md
+.claude/
+.DS_Store
