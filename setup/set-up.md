@@ -96,7 +96,7 @@ Then say: "This is the wiki starting to build up: the new file changed pages tha
 
 ## Stage 6: the rest
 
-Say: "While this runs, open your instructions file and add one rule of your own." Then ingest the other files, one at a time.
+Say this, using the real file name (`CLAUDE.md` or `AGENTS.md`) as a link to its full path, and with one short example that fits their purpose from stage 1: "While this runs, open your [CLAUDE.md] file, review the rules and make a change so it's customised to your needs. For example, [a rule such as: always note who made each decision, or: keep pages in plain English]." Then ingest the other files, one at a time.
 
 Then show them what they've built, using the real files and links:
 1. A picture: raw files on the left, wiki pages on the right, with a line from each raw file to each page that cites it. Draw it as a visual if you can. If you can't, skip it.
