@@ -6,56 +6,32 @@ The method is Andrej Karpathy's LLM Wiki: https://gist.github.com/karpathy/442a6
 
 **You need:** Claude Code or Codex, installed and logged in.
 
-## 1. Open this folder
+## Set it up
 
-Open Claude Code or Codex in this folder.
+Open Claude Code in this folder and type:
 
-## 2. Set it up
+```
+/setup
+```
 
-Paste this:
+On Codex, paste this instead:
 
 ```
 Read setup/set-up.md and follow it.
 ```
 
-It asks what you want the wiki for, and whether to use your own files or the sample files. Then it writes the instructions file. Read it when it's done: that's your rulebook.
+It takes you through the rest, one step at a time. It asks what the wiki is for, helps you add 5 files, then ingests them with you. Check its work after the first two.
 
-## 3. Ingest two files, and check each one
-
-```
-Ingest raw/[file name]. Tell me which wiki pages you created or changed, and why.
-```
-
-Open a page it wrote. Does it link back to your raw file? If not, tell it to.
-
-Then do the second file:
-
-```
-Ingest raw/[second file name]. Tell me which existing pages you changed, and why.
-```
-
-Did it update a page it had already written? That is the wiki starting to build up.
-
-## 4. Ingest the rest, and make it yours
-
-```
-Ingest the other files in raw/.
-```
-
-While it runs, open the instructions file and change one rule so it fits what you want.
-
-## 5. Ask it
-
-```
-[Your question]. Answer from the wiki, and name the raw file behind each point.
-```
-
-Ask something you'd normally dig for. Then ask: where did that come from? It should name a real file.
-
-## 6. Keep it going
+## Keep it going
 
 Pick one source that comes in every week, like your meeting notes. Put 10 minutes in your calendar each Friday. Add the week's files, ingest them, then run this:
 
 ```
 Lint the wiki. Look for contradictions, stale claims, pages with no links, and claims with no source. Fix what you can, and list what needs me.
+```
+
+To ask it something:
+
+```
+[Your question]. Answer from the wiki, and name the raw file behind each point.
 ```

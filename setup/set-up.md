@@ -1,31 +1,34 @@
 # Set up this second brain
 
-You are setting up an LLM Wiki in this folder, based on this idea file:
+You are walking someone through setting up an LLM Wiki in this folder, based on this idea file:
 https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
 
-Read it first. If you can't open it, say so in one line and carry on with the steps below. They are enough.
+Read it first. If you can't open it, say so in one line and carry on. The stages below are enough.
 
-## Step 1: ask two questions
+Work through one stage at a time. Where a stage says **Stop**, end your message and wait for their reply. Keep every message short, in plain words. If `wiki/` already exists, ask before changing anything.
 
-Ask these together, then wait for the answers:
+## Stage 1: the purpose
 
-1. What do you want this wiki to help you with? One sentence is fine.
-2. Are you using your own files or the sample files? (Own files go in `raw/`. The sample files are about Rehanga, a made-up company.)
+Ask: "What do you want this second brain to help you with? One sentence is fine."
 
-If they choose the sample files, copy everything from `setup/sample-files/` into `raw/`.
-If they choose their own files and `raw/` is empty, ask them to add about 5 files and tell you when they're done.
+**Stop.**
 
-## Step 2: build the structure
+## Stage 2: the files
 
-Create:
-- the instructions file: `CLAUDE.md` if you are Claude Code, `AGENTS.md` if you are Codex
-- `wiki/`
-- `wiki/index.md`
-- `wiki/log.md`
+Ask: "Will you use your own files, or the sample files? The sample files are about Rehanga, a made-up company."
 
-## Step 3: write these rules into the instructions file
+**Stop.**
 
-Keep them short. This file is the owner's rulebook, so write it in plain words.
+- Sample files: copy everything from `setup/sample-files/` into `raw/`.
+- Own files, if `raw/` has fewer than 5 files: say "Please add 5 files to this folder: [the full path of raw/]. Transcripts and your own notes work best. PDFs and images are fine too. Tell me when they're in." **Stop.**
+
+Check what's in `raw/`, and name the files you found.
+
+## Stage 3: the structure
+
+Create `wiki/`, `wiki/index.md`, `wiki/log.md` and the instructions file: `CLAUDE.md` if you are Claude Code, `AGENTS.md` if you are Codex.
+
+Write these rules into the instructions file. It's the owner's rulebook, so keep it short and in plain words.
 
 1. Never change anything in `raw/`. Only the wiki changes.
 2. Every wiki page starts with the front matter below. Use these five fields, with no others.
@@ -34,9 +37,9 @@ Keep them short. This file is the owner's rulebook, so write it in plain words.
 5. Append one line to `wiki/log.md` for every ingest, query or lint, starting `## [YYYY-MM-DD] ingest |`, `## [YYYY-MM-DD] query |` or `## [YYYY-MM-DD] lint |`.
 6. Ingest one file at a time. Finish its pages, the index and the log before starting the next file, even when asked to ingest several.
 7. Source pages stay short: under 100 words, saying what the file is and which pages it fed. Facts go on topic, person and decision pages. Never copy tables or long passages from `raw/`.
-8. I use this wiki for: [their answer to question 1].
+8. I use this wiki for: [their answer from stage 1].
 
-Also add: `setup/` and `START-HERE.md` are not sources. Never ingest them.
+Also add: `setup/`, `.claude/`, `README.md`, `LICENSE` and `START-HERE.md` are not sources. Never ingest them.
 
 Copy this front matter into the instructions file exactly, under the rules:
 
@@ -51,6 +54,34 @@ confidence: medium    # high, medium or low
 ---
 ```
 
-## Step 4: stop
+Tell them in one line where the instructions file is, and that it's their rulebook. Then say: "We'll ingest these files one at a time, so you can see what happens. Would you like to ingest the first file?" Name the file you'd start with: the shortest one.
 
-Don't ingest anything yet. Show the instructions file, then tell them to go to step 3 in `START-HERE.md`.
+**Stop.**
+
+## Stage 4: the first file
+
+Ingest it. List the pages you wrote, each with its full path.
+
+Then say: "Open one of these pages. Does it say what you'd expect, and do its links go back to your raw file? If not, tell me and I'll fix it. Would you like to ingest the second file?"
+
+**Stop.**
+
+## Stage 5: the second file
+
+Ingest it. List the pages you created and, separately, the existing pages you changed and why.
+
+Then say: "This is the wiki starting to build up: the new file changed pages that were already there. Would you like to ingest the rest?" If no existing page changed, say that instead of the first sentence.
+
+**Stop.**
+
+## Stage 6: the rest
+
+Say: "While this runs, open your rulebook and change one rule so it fits what you want." Then ingest the other files, one at a time.
+
+Then say: "Now ask it something you'd normally dig for. Add: answer from the wiki, and name the raw file behind each point."
+
+**Stop.**
+
+## Stage 7: keep it going
+
+After their question, say: "Pick one source that comes in every week, like your meeting notes. Put 10 minutes in your calendar each Friday: add the week's files, ingest them, and ask me to lint the wiki."
