@@ -38,8 +38,9 @@ Write these rules into the instructions file. It's the owner's rulebook, so keep
 4. Update `wiki/index.md` on every change: one line per page, with a one-line summary. `wiki/index.md` and `wiki/log.md` have no front matter.
 5. Append one line to `wiki/log.md` for every ingest, query or lint, starting `## [YYYY-MM-DD] ingest |`, `## [YYYY-MM-DD] query |` or `## [YYYY-MM-DD] lint |`. An ingest line names the raw file. A file you can't read gets `## [YYYY-MM-DD] skip |` and the reason.
 6. Ingest one file at a time. Finish its pages, the index and the log before starting the next file, even when asked to ingest several.
-7. Source pages stay short: under 100 words, saying what the file is and which pages it fed. Facts go on topic, person and decision pages. Never copy tables or long passages from `raw/`.
-8. I use this wiki for: [their answer from stage 1].
+7. Source pages stay short: under 100 words, saying what the file is, what it concluded in one line, and which pages it fed. Facts go on topic, person and decision pages. Never copy tables or long passages from `raw/`.
+8. Topic pages are about a subject or question, never one file. Don't make a page that retells a single file. If the detail only matters to that file, leave it in `raw/` and link to it.
+9. I use this wiki for: [their answer from stage 1].
 
 Also add: only files in `raw/` are sources. Never ingest anything else in this folder.
 
