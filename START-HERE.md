@@ -20,7 +20,23 @@ On Codex, paste this instead:
 Read setup/set-up.md and follow it.
 ```
 
-It takes you through the rest, one step at a time. It asks what the wiki is for, helps you add 5 files, then ingests them with you. Check its work after the first two.
+It takes you through the rest, one step at a time. It asks what the wiki is for, helps you add 5 files, then ingests them with you. Check its work after the first two. That's your memory layer.
+
+## Connect a source
+
+```
+/connector
+```
+
+Pick a source and it walks you through collecting and testing. RSS needs no login. That's your capture layer. On Codex, paste `Read setup/connector.md and follow it.`
+
+## Build an agent
+
+```
+/build-agent
+```
+
+It makes a first agent, `/brief`, which tells you what changed in your wiki and why it matters. That's your agent layer. On Codex, paste `Read setup/build-agent.md and follow it.`
 
 ## Keep it going
 
@@ -32,7 +48,7 @@ Pick one source that comes in every week, like your meeting notes. Put 10 minute
 
 It finds anything new and adds it to your wiki. Your files stay in `raw/` for good, because the wiki links to them. You can also paste text after `/capture`. On Codex, paste `Read setup/capture.md and follow it.`
 
-Then run this:
+Then run `/brief`. Now and then, run this:
 
 ```
 Lint the wiki. Look for contradictions, stale claims, pages with no links, and claims with no source. Fix what you can, and list what needs me.

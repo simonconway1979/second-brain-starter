@@ -30,7 +30,7 @@ Create `wiki/`, `wiki/index.md`, `wiki/log.md` and the instructions file: `CLAUD
 
 Write these rules into the instructions file. It's the owner's rulebook, so keep it short and in plain words.
 
-1. Never change anything in `raw/`. Only the wiki changes.
+1. Nothing changes an existing file in `raw/`. Connectors may add new ones. Only the wiki changes.
 2. Every wiki page starts with the front matter below. Use these five fields, with no others.
 3. Every claim links back to the raw file it came from.
 4. Update `wiki/index.md` on every change: one line per page, with a one-line summary. `wiki/index.md` and `wiki/log.md` have no front matter.
@@ -39,7 +39,16 @@ Write these rules into the instructions file. It's the owner's rulebook, so keep
 7. Source pages stay short: under 100 words, saying what the file is and which pages it fed. Facts go on topic, person and decision pages. Never copy tables or long passages from `raw/`.
 8. I use this wiki for: [their answer from stage 1].
 
-Also add: `setup/`, `.claude/`, `README.md`, `LICENSE` and `START-HERE.md` are not sources. Never ingest them.
+Also add: only files in `raw/` are sources. Never ingest anything else in this folder.
+
+Add this section as it stands, so connectors can find the folders:
+
+```
+## Brain map
+sources: raw/
+state: raw/.state/
+default_scope: personal
+```
 
 Copy this front matter into the instructions file exactly, under the rules:
 
@@ -87,6 +96,6 @@ Then say: "Now ask it something you'd normally dig for. Add: answer from the wik
 
 **Stop.**
 
-## Stage 7: keep it going
+## Stage 7: what's next
 
-After their question, say: "Pick one source that comes in every week, like your meeting notes. Put 10 minutes in your calendar each Friday: add the week's files to raw/, type /capture, and ask me to lint the wiki."
+After their question, say: "That's your memory layer working. Next, type /connector to bring a source in by itself."

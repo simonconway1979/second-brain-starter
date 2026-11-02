@@ -6,3 +6,6 @@ CLAUDE.md
 AGENTS.md
 .claude/settings.local.json
 .DS_Store
+agents/
+briefs/
+.claude/skills/brief/
