@@ -34,7 +34,7 @@ Write these rules into the instructions file. It's the owner's rulebook, so keep
 2. Every wiki page starts with the front matter below. Use these five fields, with no others.
 3. Every claim links back to the raw file it came from.
 4. Update `wiki/index.md` on every change: one line per page, with a one-line summary. `wiki/index.md` and `wiki/log.md` have no front matter.
-5. Append one line to `wiki/log.md` for every ingest, query or lint, starting `## [YYYY-MM-DD] ingest |`, `## [YYYY-MM-DD] query |` or `## [YYYY-MM-DD] lint |`.
+5. Append one line to `wiki/log.md` for every ingest, query or lint, starting `## [YYYY-MM-DD] ingest |`, `## [YYYY-MM-DD] query |` or `## [YYYY-MM-DD] lint |`. An ingest line names the raw file. A file you can't read gets `## [YYYY-MM-DD] skip |` and the reason.
 6. Ingest one file at a time. Finish its pages, the index and the log before starting the next file, even when asked to ingest several.
 7. Source pages stay short: under 100 words, saying what the file is and which pages it fed. Facts go on topic, person and decision pages. Never copy tables or long passages from `raw/`.
 8. I use this wiki for: [their answer from stage 1].
@@ -89,4 +89,4 @@ Then say: "Now ask it something you'd normally dig for. Add: answer from the wik
 
 ## Stage 7: keep it going
 
-After their question, say: "Pick one source that comes in every week, like your meeting notes. Put 10 minutes in your calendar each Friday: add the week's files, ingest them, and ask me to lint the wiki."
+After their question, say: "Pick one source that comes in every week, like your meeting notes. Put 10 minutes in your calendar each Friday: add the week's files to raw/, type /capture, and ask me to lint the wiki."

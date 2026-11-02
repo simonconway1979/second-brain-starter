@@ -24,7 +24,15 @@ It takes you through the rest, one step at a time. It asks what the wiki is for,
 
 ## Keep it going
 
-Pick one source that comes in every week, like your meeting notes. Put 10 minutes in your calendar each Friday. Add the week's files, ingest them, then run this:
+Pick one source that comes in every week, like your meeting notes. Put 10 minutes in your calendar each Friday. Add the week's files to `raw/`, then type:
+
+```
+/capture
+```
+
+It finds anything new and adds it to your wiki. Your files stay in `raw/` for good, because the wiki links to them. You can also paste text after `/capture`. On Codex, paste `Read setup/capture.md and follow it.`
+
+Then run this:
 
 ```
 Lint the wiki. Look for contradictions, stale claims, pages with no links, and claims with no source. Fix what you can, and list what needs me.
