@@ -28,13 +28,26 @@ Create:
 Keep them short. This file is the owner's rulebook, so write it in plain words.
 
 1. Never change anything in `raw/`. Only the wiki changes.
-2. Every wiki page starts with front matter: title, type, sources (paths in `raw/`), updated, confidence (high, medium or low).
+2. Every wiki page starts with the front matter below. Use these five fields, with no others.
 3. Every claim links back to the raw file it came from.
-4. Update `wiki/index.md` on every change: one line per page, with a one-line summary.
-5. Append one line to `wiki/log.md` for every ingest, query or lint, starting `## [YYYY-MM-DD] ingest |`.
+4. Update `wiki/index.md` on every change: one line per page, with a one-line summary. `wiki/index.md` and `wiki/log.md` have no front matter.
+5. Append one line to `wiki/log.md` for every ingest, query or lint, starting `## [YYYY-MM-DD] ingest |`, `## [YYYY-MM-DD] query |` or `## [YYYY-MM-DD] lint |`.
 6. I use this wiki for: [their answer to question 1].
 
 Also add: `setup/` and `START-HERE.md` are not sources. Never ingest them.
+
+Copy this front matter into the instructions file exactly, under the rules:
+
+```yaml
+---
+title: Page title
+type: source          # source, topic, person or decision
+sources:              # paths in raw/, one per line
+  - raw/file-name.md
+updated: YYYY-MM-DD
+confidence: medium    # high, medium or low
+---
+```
 
 ## Step 4: stop
 
