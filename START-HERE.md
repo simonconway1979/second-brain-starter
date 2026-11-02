@@ -20,13 +20,21 @@ Read setup/set-up.md and follow it.
 
 It asks what you want the wiki for, and whether to use your own files or the sample files. Then it writes the instructions file. Read it when it's done: that's your rulebook.
 
-## 3. Ingest one file
+## 3. Ingest two files, and check each one
 
 ```
 Ingest raw/[file name]. Tell me which wiki pages you created or changed, and why.
 ```
 
 Open a page it wrote. Does it link back to your raw file? If not, tell it to.
+
+Then do the second file:
+
+```
+Ingest raw/[second file name]. Tell me which existing pages you changed, and why.
+```
+
+Did it update a page it had already written? That is the wiki starting to build up.
 
 ## 4. Ingest the rest, and make it yours
 
