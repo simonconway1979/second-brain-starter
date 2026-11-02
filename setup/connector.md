@@ -6,13 +6,24 @@ First read `setup/connector-rules.md`, and follow those rules exactly.
 
 **If they named a source that already has a state file in `raw/.state/`,** read its recipe in `connectors/`, run it using the saved settings, print the one line, and finish.
 
+**If they named a source that has a recipe but no state file,** go to stage 2. If its tools still aren't connected, say what's missing and stop.
+
 ## Stage 1: pick a source
 
-List the recipes in `connectors/`. Say: "Which source do you want to connect? If you don't have one ready, pick rss: it needs no login."
+Say: "Which source do you want to connect? If you don't have one ready, pick RSS: it needs no login."
+
+**Buttons:** one for each recipe in `connectors/`, plus "Other"
 
 **Stop.**
 
-If there's no recipe for their source, say you'll build one from the rules, and write `connectors/<source>.md` in the same shape as the others.
+If they pick a recipe, go to stage 2.
+
+If they pick "Other", ask: "What do you want to connect?" **Stop.** Then:
+
+1. Check if you already have tools for it. If you do, go to step 4.
+2. If you don't, find its MCP and do your best to guide them through connecting it, one step at a time. Say so plainly if you can't find one. Logins happen in the browser. Keys never go in this chat.
+3. Write `connectors/<source>.md` in the same shape as the other recipes. Then say: "Restart Claude, then run /connector <source> and we'll carry on from here." **Stop.**
+4. Write the recipe if you haven't yet, then go to stage 2.
 
 ## Stage 2: check the tool
 
