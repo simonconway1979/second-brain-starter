@@ -38,4 +38,14 @@ Run it again and print the one line. Check the three tests in the rules, and say
 
 ## Stage 5: what's next
 
-Say: "That's your capture layer. To run it again, type /connector [source]. To schedule it, ask me to run that every morning. Then /capture adds what's new to your wiki. Next, type /build-agent to make your first agent."
+Say: "That's your capture layer. To run it again, type /connector [source]. To schedule it, ask me to run that every morning. Then /capture adds what's new to your wiki."
+
+End your message with exactly this:
+
+```
+---
+
+## Build an agent
+
+Next, run /build-agent to build your first agent.
+```

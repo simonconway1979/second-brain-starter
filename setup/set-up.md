@@ -109,4 +109,12 @@ Then say: "Now ask it something you'd normally dig for. Add: answer from the wik
 
 ## Stage 7: what's next
 
-After their question, say: "That's your memory layer working. Next, type /connector to bring a source in by itself."
+After their question, say "That's your memory layer working.", then end your message with exactly this:
+
+```
+---
+
+## Set up a connector
+
+Next, run /connector to set up a connector.
+```
