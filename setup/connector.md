@@ -1,6 +1,6 @@
 # Connect a source
 
-Walk them through this one stage at a time. Keep every message short, in plain words. Where a stage says **Stop**, end your message with the question and wait. Don't add a recap, a status note or a next-step box.
+Walk them through this one stage at a time. Keep every message short, in plain words. Where a stage says **Stop**, end your message with the question and wait. Where a stage gives a **Button**, ask with your question tool (AskUserQuestion in Claude Code), so they can click. If you have no question tool, ask in plain text. Don't add a recap, a status note or a next-step box.
 
 First read `setup/connector-rules.md`, and follow those rules exactly.
 
@@ -18,6 +18,8 @@ If there's no recipe for their source, say you'll build one from the rules, and 
 
 Read the recipe and do its "Connect" steps. List what the tool can do, and mark which actions you'll use and which you won't touch. Then say: "I'll only use the read actions. OK to collect 5 items?"
 
+**Buttons:** "Yes, collect 5 items" · "Not yet"
+
 **Stop.**
 
 ## Stage 3: collect and structure
@@ -25,6 +27,8 @@ Read the recipe and do its "Connect" steps. List what the tool can do, and mark 
 Collect the 5 newest items and write the files, following the rules and the recipe. Save the state file. Print the one line. Give the full path of one file and say: "Open this one. The seven fields at the top are what every connector writes."
 
 Then say: "Let's test it. A second run should write nothing new."
+
+**Buttons:** "Yes, run the test" · "Not yet"
 
 **Stop.**
 

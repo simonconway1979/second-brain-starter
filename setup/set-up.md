@@ -5,7 +5,7 @@ https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
 
 Read it first. If you can't open it, say so in one line and carry on. The stages below are enough.
 
-Work through one stage at a time. Where a stage says **Stop**, end your message with the question and wait for their reply. Keep every message short, in plain words. Don't add a recap, a status note or a next-step box: this guide is the only next step. If `wiki/` already exists, ask before changing anything.
+Work through one stage at a time. Where a stage says **Stop**, end your message with the question and wait for their reply. Keep every message short, in plain words. Where a stage gives a **Button**, ask with your question tool (AskUserQuestion in Claude Code), so they can click. If you have no question tool, ask in plain text. Don't add a recap, a status note or a next-step box: this guide is the only next step. If `wiki/` already exists, ask before changing anything.
 
 ## Stage 1: the purpose
 
@@ -16,6 +16,8 @@ Ask: "What do you want this second brain to help you with? One sentence is fine.
 ## Stage 2: the files
 
 Ask: "Will you use your own files, or the sample files? The sample files are about Rehanga, a made-up company."
+
+**Buttons:** "My own files" · "The sample files"
 
 **Stop.**
 
@@ -65,15 +67,19 @@ confidence: medium    # high, medium or low
 
 Say, using the real file name: "I've added the wiki rules to your CLAUDE.md file in this folder. Keep these rules so your wiki works correctly. You can add your own instructions to this file at any time. If you have instructions from another project, add them below these rules."
 
-Then say: "We'll ingest these files one at a time, so you can see what happens. Would you like to ingest the first file?" Name the file you'd start with: the shortest one.
+Then say: "We'll ingest these files one at a time, so you can see what happens. Would you like to get started?"
+
+**Buttons:** "Yes, start ingesting files" · "Not yet"
 
 **Stop.**
 
 ## Stage 4: the first file
 
-Ingest it. List the pages you wrote, each with its full path.
+Ingest the shortest file. Say which one it is. List the pages you wrote, each with its full path.
 
-Then say: "Open one of these pages. Does it say what you'd expect, and do its links go back to your raw file? If not, tell me and I'll fix it. Would you like to ingest the second file?"
+Then say: "Open one of these pages. Does it say what you'd expect, and do its links go back to your raw file? If not, tell me and I'll fix it. Ready for the second file?"
+
+**Buttons:** "Yes, ingest the second file" · "Not yet"
 
 **Stop.**
 
@@ -81,7 +87,9 @@ Then say: "Open one of these pages. Does it say what you'd expect, and do its li
 
 Ingest it. List the pages you created and, separately, the existing pages you changed and why.
 
-Then say: "This is the wiki starting to build up: the new file changed pages that were already there. Would you like to ingest the rest?" If no existing page changed, say that instead of the first sentence.
+Then say: "This is the wiki starting to build up: the new file changed pages that were already there. Ready for the rest?" If no existing page changed, say that instead of the first sentence.
+
+**Buttons:** "Yes, ingest the rest" · "Not yet"
 
 **Stop.**
 
