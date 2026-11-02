@@ -63,7 +63,9 @@ confidence: medium    # high, medium or low
 ---
 ```
 
-Tell them in one line where the instructions file is, and that it's their rulebook. Then say: "We'll ingest these files one at a time, so you can see what happens. Would you like to ingest the first file?" Name the file you'd start with: the shortest one.
+Say, using the real file name: "I've added the wiki rules to your CLAUDE.md file in this folder. Keep these rules so your wiki works correctly. You can add your own instructions to this file at any time. If you have instructions from another project, add them below these rules."
+
+Then say: "We'll ingest these files one at a time, so you can see what happens. Would you like to ingest the first file?" Name the file you'd start with: the shortest one.
 
 **Stop.**
 
@@ -85,7 +87,7 @@ Then say: "This is the wiki starting to build up: the new file changed pages tha
 
 ## Stage 6: the rest
 
-Say: "While this runs, open your rulebook and change one rule so it fits what you want." Then ingest the other files, one at a time.
+Say: "While this runs, open your instructions file and add one rule of your own." Then ingest the other files, one at a time.
 
 Then show them what they've built, using the real files and links:
 1. A picture: raw files on the left, wiki pages on the right, with a line from each raw file to each page that cites it. Draw it as a visual if you can. If you can't, skip it.
