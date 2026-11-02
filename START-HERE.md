@@ -31,7 +31,7 @@ Open a page it wrote. Does it link back to your raw file? If not, tell it to.
 ## 4. Ingest the rest, and make it yours
 
 ```
-Ingest the other files in raw/, one at a time. Follow the rules in the instructions file. Update the index and the log after each one.
+Ingest the other files in raw/.
 ```
 
 While it runs, open the instructions file and change one rule so it fits what you want.

@@ -32,7 +32,8 @@ Keep them short. This file is the owner's rulebook, so write it in plain words.
 3. Every claim links back to the raw file it came from.
 4. Update `wiki/index.md` on every change: one line per page, with a one-line summary. `wiki/index.md` and `wiki/log.md` have no front matter.
 5. Append one line to `wiki/log.md` for every ingest, query or lint, starting `## [YYYY-MM-DD] ingest |`, `## [YYYY-MM-DD] query |` or `## [YYYY-MM-DD] lint |`.
-6. I use this wiki for: [their answer to question 1].
+6. Ingest one file at a time. Finish its pages, the index and the log before starting the next file, even when asked to ingest several.
+7. I use this wiki for: [their answer to question 1].
 
 Also add: `setup/` and `START-HERE.md` are not sources. Never ingest them.
 
