@@ -78,6 +78,11 @@ Then say: "This is the wiki starting to build up: the new file changed pages tha
 
 Say: "While this runs, open your rulebook and change one rule so it fits what you want." Then ingest the other files, one at a time.
 
+Then show them what they've built, using the real files and links:
+1. A picture: raw files on the left, wiki pages on the right, with a line from each raw file to each page that cites it. Draw it as a visual if you can. If you can't, skip it.
+2. The file structure of `raw/` and `wiki/` as a text tree.
+3. A short table of how the wiki pages link to each other.
+
 Then say: "Now ask it something you'd normally dig for. Add: answer from the wiki, and name the raw file behind each point."
 
 **Stop.**
