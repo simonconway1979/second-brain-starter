@@ -99,7 +99,7 @@ Then say: "This is the wiki starting to build up: the new file changed pages tha
 Say this, using the real file name (`CLAUDE.md` or `AGENTS.md`) as a link to its full path, and with one short example that fits their purpose from stage 1: "While this runs, open your [CLAUDE.md] file, review the rules and make a change so it's customised to your needs. For example, [a rule such as: always note who made each decision, or: keep pages in plain English]." Then ingest the other files, one at a time.
 
 Then show them what they've built, using the real files and links:
-1. A picture: raw files on the left, wiki pages on the right, with a line from each raw file to each page that cites it. Draw it as a visual if you can. If you can't, skip it.
+1. A picture, always: write `wiki/map.html`, one self-contained HTML file with an inline SVG. Raw files on the left, wiki pages on the right, a line from each raw file to each page that cites it, and each box labelled with its file name. No scripts, no libraries from the web, and don't install anything for this: plain HTML and SVG open in any browser. Show its full path as a link so they can open it. If you can't write the file, draw the same picture in text in the chat instead.
 2. The file structure of `raw/` and `wiki/` as a text tree.
 3. A short table of how the wiki pages link to each other.
 
