@@ -1,48 +1,43 @@
 # Build your first agent
 
-An agent is an instructions file plus a trigger. Walk them through this in short, plain messages. Where a stage says **Stop**, end your message with the question and wait. Don't add a recap, a status note or a next-step box.
+Your first agent is a daily briefing. Don't ask any questions first. Keep every message short, in plain words. Don't add a recap, a status note or a next-step box.
 
-## Stage 1: pick the job
+## Step 1: write it
 
-Say: "Your first agent is a brief. It reads what changed in your wiki and tells you what matters. Who is it for, and what should it look out for? One line is fine, or say 'just me'."
-
-**Stop.**
-
-## Stage 2: write it
-
-Create `agents/brief.md` with these instructions, adding their answer as the audience and focus:
+Create `agents/daily-briefing.md` with exactly this:
 
 ```
-# Brief agent
+# Daily briefing
 
-For: [their answer]
-
-1. Read wiki/log.md and find the entries from the last 7 days.
-2. Read the wiki pages those entries touched, and the index.
-3. Write a brief of under 150 words: what changed, why it matters, and one thing to do next.
-4. Name the wiki page behind each point. If the wiki doesn't support a point, leave it out.
-5. Save it as briefs/YYYY-MM-DD.md and show it. Briefs are not sources: never ingest them.
+1. Read wiki/log.md and find the ingest lines dated today.
+2. If there are none, say "Nothing was imported today." and stop.
+3. List each imported file as a link to the file in raw/, with one line on what it is, taken from its source page.
+4. Say how many wiki pages were created or changed.
+5. Name one thing worth a look, with a link to the wiki page it came from.
+6. Keep it under 150 words. Save it as briefs/YYYY-MM-DD.md and show it. Briefs are not sources: never ingest them.
 ```
 
-If you are Claude Code, also create `.claude/skills/brief/SKILL.md`:
+If you are Claude Code, also create `.claude/skills/daily-briefing/SKILL.md`:
 
 ```
 ---
-name: brief
-description: Writes a short brief on what changed in the wiki. Use for /brief.
+name: daily-briefing
+description: Shows what was imported into the wiki today. Use for /daily-briefing.
 disable-model-invocation: true
 allowed-tools: Read Write Glob
 ---
 
-Read `agents/brief.md` and follow it.
+Read `agents/daily-briefing.md` and follow it.
 ```
 
-## Stage 3: run it
+## Step 2: show it
 
-Follow `agents/brief.md` now and show the brief.
+Show the contents of `agents/daily-briefing.md`, with a link to the file. Say: "This is the whole agent: an instructions file plus a trigger."
 
-Then say: "That's your third layer. An agent is an instructions file plus a trigger: open agents/brief.md and you can read all of it. To run it again, type /brief, or ask me to schedule it every Friday."
+## Step 3: run it
 
-## Stage 4: keep it going
+Follow `agents/daily-briefing.md` now and show the briefing.
 
-Say: "Pick one source that comes in every week. Put 10 minutes in your calendar each Friday: add the files to raw/, type /capture, then /brief."
+## Step 4: finish
+
+Say: "That's all three layers: capture, memory and agents. To run this again, type /daily-briefing, or ask me to run it every morning."
