@@ -30,13 +30,13 @@ It takes you through the rest, one step at a time. It asks what the wiki is for,
 
 Pick a source and it walks you through collecting and testing. RSS needs no login. That's your capture layer. On Codex, paste `Read setup/connector.md and follow it.`
 
-## Build an agent
+## Act
 
 ```
-/build-agent
+/daily-briefing
 ```
 
-It makes a first agent, `/daily-briefing`, which shows what was imported today. That's your agent layer. On Codex, paste `Read setup/build-agent.md and follow it.`
+Your first agent shows what was imported today. It's one file you can read: `.claude/skills/daily-briefing/SKILL.md`. That's your agent layer. On Codex, paste `Read .claude/skills/daily-briefing/SKILL.md and follow it.`
 
 ## Keep it going
 

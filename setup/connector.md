@@ -53,12 +53,18 @@ If they passed, follow `setup/capture.md` to add the new files to the wiki. If t
 
 Say: "That's your capture layer. To run it again, type /connector [source]. It brings in anything new and adds it to your wiki. To schedule it, ask me to run that every morning."
 
-End your message with exactly this:
+End your message with exactly this, with the file name as a link to `.claude/skills/daily-briefing/SKILL.md`:
 
 ```
 ---
 
-## Build an agent
+ACT
 
-Next, run /build-agent to build your first agent.
+---
+
+Your first agent: [daily-briefing]
 ```
+
+**Buttons:** "Run daily briefing" · "Not now"
+
+If they pick "Run daily briefing", read `.claude/skills/daily-briefing/SKILL.md` and follow it.
